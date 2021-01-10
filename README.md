@@ -1,10 +1,7 @@
+![IMPORT_1](https://user-images.githubusercontent.com/25294569/76310705-fc621b00-62d7-11ea-9643-1670cfe6be18.gif)
 # graphql-import
 
-[![CircleCI](https://circleci.com/gh/prisma/graphql-import.svg?style=shield)](https://circleci.com/gh/prisma/graphql-import) [![npm version](https://badge.fury.io/js/graphql-import.svg)](https://badge.fury.io/js/graphql-import)
-
-Import &amp; export definitions in GraphQL SDL (also refered to as GraphQL modules)
-
-> There is also a [`graphql-import-loader`](https://github.com/prisma/graphql-import-loader) for Webpack available.
+[![Discord Chat](https://img.shields.io/discord/625400653321076807)](https://discord.gg/xud7bH9)
 
 ## Install
 
@@ -18,10 +15,11 @@ yarn add graphql-import
 import { importSchema } from 'graphql-import'
 import { makeExecutableSchema } from 'graphql-tools'
 
-const typeDefs = importSchema('schema.graphql')
-const resolvers = {}
+const typeDefs = importSchema('schema.graphql'); // or .gql or glob pattern like **/*.graphql
+const resolvers = {};
 
-const schema = makeExecutableSchema({ typeDefs, resolvers })
+const schema = makeExecutableSchema({ typeDefs, resolvers });
+
 ```
 
 Assume the following directory structure:
@@ -65,7 +63,7 @@ type Comment {
 }
 ```
 
-Running `console.log(importSchema('schema.graphql'))` produces the following output:
+Running `importSchema('schema.graphql')` produces the following output:
 
 ```graphql
 type Query {
@@ -84,15 +82,3 @@ type Comment {
   text: String!
 }
 ```
-
-## [Full documentation](https://oss.prisma.io/content/graphql-import/overview)
-
-## Related topics & next steps
-
-- Static import step as build time
-- Namespaces
-- Support importing from HTTP endpoints (or [Links](https://github.com/apollographql/apollo-link))
-- Create RFC to add import syntax to GraphQL spec
-
-<p align="center"><a href="https://oss.prisma.io"><img src="https://imgur.com/IMU2ERq.png" alt="Prisma" height="170px"></a></p>
-
