@@ -35,11 +35,12 @@
     "@graphql-toolkit/core": "0.10.3",
     "@graphql-toolkit/graphql-file-loader": "0.10.3",
     "@graphql-toolkit/json-file-loader": "0.10.3",
-    "@graphql-toolkit/schema-merging": "0.10.3",
+    "@graphql-toolkit/schema-merging": "https://github.com/DevFullStackJS/graphql-toolkit-schema-merging.git",
     "@graphql-toolkit/url-loader": "0.10.3"
   },
+
   "deprecated": false,
-  "description": "![IMPORT_1](https://user-images.githubusercontent.com/25294569/76310705-fc621b00-62d7-11ea-9643-1670cfe6be18.gif) # graphql-import",
+  "description": "# graphql-import",
   "devDependencies": {
     "@types/jest": "25.2.1",
     "@types/node": "13.11.0",
