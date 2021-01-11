@@ -31,10 +31,10 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "@graphql-toolkit/code-file-loader": "0.10.3",
-    "@graphql-toolkit/core": "0.10.3",
-    "@graphql-toolkit/graphql-file-loader": "0.10.3",
-    "@graphql-toolkit/json-file-loader": "0.10.3",
+    "@graphql-toolkit/code-file-loader": "https://github.com/DevFullStackJS/graphql-toolkit-code-file-loader.git",
+    "@graphql-toolkit/core": "https://github.com/DevFullStackJS/graphql-toolkit-core.git",
+    "@graphql-toolkit/graphql-file-loader": "https://github.com/DevFullStackJS/graphql-toolkit-graphql-file-loader.git",
+    "@graphql-toolkit/json-file-loader": "https://github.com/DevFullStackJS/graphql-toolkit-json-file-loader.git",
     "@graphql-toolkit/schema-merging": "https://github.com/DevFullStackJS/graphql-toolkit-schema-merging.git",
     "@graphql-toolkit/url-loader": "https://github.com/DevFullStackJS/graphql-toolkit-url-loader.git"
   },
